@@ -1,8 +1,10 @@
 (function determineLanguage () {
   document.getElementById("translateButton").addEventListener("click", determineLanguage)
-  var userString = document.getElementById("userString").value;
+  var userString = document.getElementById("userString").value.split(" ");
   var spanish = document.getElementById("spanishRadio");
   var french = document.getElementById("frenchRadio");
+
+  console.log(userString)
 
   if (spanish.checked) {
     console.log("Spanish is checked")
