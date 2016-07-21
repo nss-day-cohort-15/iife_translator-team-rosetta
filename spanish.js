@@ -1,20 +1,34 @@
-(function translateToSpanish(userString) {
-  console.log("YO");
-  console.log(userString)
+Router = (function (router) {
+
+  router.translateToSpanish = function(){
+  console.log("YO translateToSpanish is running!");
+
 
   for (let i = 0; i < userString.length; i++) {
 
-    if (userString[i] === "merry") {
-      userString[i] = "feliz"
+    if (Router.getString()[i] === "merry") {
+      Router.getString()[i] = "feliz"
     }
 
+  }}
+console.log(Router)
+// console.log(Router.getString())
+return router
+return userString
+
+}(Router));
 
 
-  }
-
-}());
 
 
-var spanishdict = {feliz : "merry", navidad : "christmas",
-fiestas : "holiday", feliz : "happy", nuevo : "new", año : "year",
-y : "and", un : "a", con : "with", amor : "love", de : "from"}
+
+
+
+
+
+
+
+
+  // var spanishDict = {feliz : "merry", navidad : "christmas",
+  // fiestas : "holiday", feliz : "happy", nuevo : "new", año : "year",
+  // y : "and", un : "a", con : "with", amor : "love", de : "from"}
