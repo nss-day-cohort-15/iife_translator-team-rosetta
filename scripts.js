@@ -6,18 +6,19 @@
 
   if (spanish.checked) {
     console.log("Spanish is checked")
-    // translateToSpanish(userString)
+    translateToSpanish(userString)
     return userString
   }
 
     if (french.checked) {
     console.log("French is checked")
-    // translateToFrench(userString)
+    translateToFrench(userString)
     return userString
   }
 
 }());
 
+// userString.toArray()
 
 // determineLanguage FUNCTION (
 // var translateString = document.getElementById("userString").value
