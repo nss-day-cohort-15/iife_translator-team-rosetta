@@ -1,18 +1,28 @@
 Router = (function (router) {
 
-  router.translateToSpanish = function(){
-  console.log("YO translateToSpanish is running!");
+
+  var spanishDict = {feliz : "merry", navidad : "christmas",
+  fiestas : "holiday", feliz : "happy", nuevo : "new", año : "year",
+  y : "and", un : "a", con : "with", amor : "love", de : "from"}
 
 
-  for (let i = 0; i < userString.length; i++) {
+  // var translatedSpanish = []
+  // var stringArr = userString [HIDDEN PART OF FUNCTION]
 
-    if (Router.getString()[i] === "merry") {
-      Router.getString()[i] = "feliz"
+  router.translateToSpanish = function(stringArr){
+    console.log("YO translateToSpanish is running!");
+
+    // var stringArr = Router.getString();
+    console.log(stringArr);
+    for (var i = 0; i < stringArr.length; i++) {
+      console.log('inside the for loop');
+
+
     }
-
-  }}
-console.log(Router)
-// console.log(Router.getString())
+    console.log(router.translatedSpanish);
+  }
+console.log(router)
+// console.log('router.translatedSpanish', router.translatedSpanish)
 return router
 return userString
 
@@ -29,6 +39,6 @@ return userString
 
 
 
-  // var spanishDict = {feliz : "merry", navidad : "christmas",
-  // fiestas : "holiday", feliz : "happy", nuevo : "new", año : "year",
-  // y : "and", un : "a", con : "with", amor : "love", de : "from"}
+  var spanishDict = {feliz : "merry", navidad : "christmas",
+  fiestas : "holiday", feliz : "happy", nuevo : "new", año : "year",
+  y : "and", un : "a", con : "with", amor : "love", de : "from"}
