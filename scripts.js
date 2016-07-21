@@ -1,4 +1,4 @@
-(function determineLanguage () {
+var translate = (function determineLanguage () {
   document.getElementById("translateButton").addEventListener("click", determineLanguage)
   var userString = document.getElementById("userString").value.split(" ");
   var spanish = document.getElementById("spanishRadio");
