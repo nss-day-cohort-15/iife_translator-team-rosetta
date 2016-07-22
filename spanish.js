@@ -19,7 +19,7 @@ Router = (function (router) {
     from: "de"
   }
 
-
+  // console.log(spanishDict)
   // var translatedSpanish = []
   // var stringArr = userString [HIDDEN PART OF FUNCTION]
 
@@ -31,13 +31,15 @@ Router = (function (router) {
     for (var i = 0; i < stringArr.length; i++) {
       console.log('inside the for loop');
       var currentWord = stringArr[i]
+
+
+
       for (var key in spanishDict) {
-        if (spanishDict[key] === stringArr[i]) {
+        if (key === currentWord) {
           console.log("INSIDE THE FOR IN LOOP!")
           stringArr[i] = spanishDict[key]
-          console.log(stringArr[i], "HIT THE STRING REASSIGNMENT!")
           console.log(spanishDict[key])
-          return stringArr
+          console.log(stringArr)
         }
       }
 

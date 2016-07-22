@@ -17,7 +17,7 @@ var Router = (function () {
     if (spanish.checked) {
       console.log("Spanish is checked")
       Router.translateToSpanish(userString)
-      console.log(userString)
+      // console.log(userString)
       console.log("Spanish function is done")
     }
   }
