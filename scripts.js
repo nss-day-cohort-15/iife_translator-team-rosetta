@@ -38,4 +38,3 @@ var Router = (function () {
   }
 
 }());
-

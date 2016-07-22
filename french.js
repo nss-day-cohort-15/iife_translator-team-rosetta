@@ -18,8 +18,8 @@ Router = (function (router) {
   // var translatedSpanish = []
   // var stringArr = userString [HIDDEN PART OF FUNCTION]
 
-  router.translateToFrench = function(stringArr){
-    console.log("YO translateToFrench is running!");
+  router.translateToFrench = function(){
+    console.log("Yo! translateToFrench is running!");
 
     var stringArr = Router.getString();
     // console.log(stringArr);
@@ -38,10 +38,10 @@ Router = (function (router) {
         }
 
         translatedFrenchString = stringArr.join(" ")
-        console.log(translatedFrenchString)
+        // console.log(translatedFrenchString)
       }
 
-      document.getElementById("resultsDiv").innerHTML = translatedFrenchString
+      document.getElementById("frenchResultsDiv").innerHTML = translatedFrenchString
       // translatedSpanishString = stringArr.join(" ")
       // console.log(translatedSpanishString)
       // return translatedSpanish
@@ -56,18 +56,3 @@ return router
 return userString
 
 }(Router));
-
-
-
-
-
-
-
-
-
-
-
-
-  var spanishDict = {feliz : "merry", navidad : "christmas",
-  fiestas : "holiday", feliz : "happy", nuevo : "new", año : "year",
-  y : "and", un : "a", con : "with", amor : "love", de : "from"}

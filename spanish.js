@@ -1,10 +1,6 @@
 Router = (function (router) {
 
 
-  // var spanishDict = {feliz : "merry", navidad : "christmas",
-  // fiestas : "holiday", feliz : "happy", nuevo : "new", año : "year",
-  // y : "and", un : "a", con : "with", amor : "love", de : "from"}
-
   var spanishDict = {
     merry: "feliz",
     christmas: "navidad",
@@ -23,7 +19,7 @@ Router = (function (router) {
   // var translatedSpanish = []
   // var stringArr = userString [HIDDEN PART OF FUNCTION]
 
-  router.translateToSpanish = function(stringArr){
+  router.translateToSpanish = function(){
     console.log("YO translateToSpanish is running!");
 
     var stringArr = Router.getString();
@@ -31,8 +27,6 @@ Router = (function (router) {
     for (var i = 0; i < stringArr.length; i++) {
       console.log('inside the for loop');
       var currentWord = stringArr[i]
-
-
 
       for (var key in spanishDict) {
         if (key === currentWord) {
@@ -46,7 +40,7 @@ Router = (function (router) {
         console.log(translatedSpanishString)
       }
 
-      document.getElementById("resultsDiv").innerHTML = translatedSpanishString
+      document.getElementById("spanishResultsDiv").innerHTML = translatedSpanishString
       // translatedSpanishString = stringArr.join(" ")
       // console.log(translatedSpanishString)
       // return translatedSpanish
@@ -58,21 +52,9 @@ Router = (function (router) {
 // console.log(router)
 // console.log('router.translatedSpanish', router.translatedSpanish)
 return router
-return userString
+// return userString
 
 }(Router));
 
-
-
-
-
-
-
-
-
-
-
-
-  var spanishDict = {feliz : "merry", navidad : "christmas",
-  fiestas : "holiday", feliz : "happy", nuevo : "new", año : "year",
-  y : "and", un : "a", con : "with", amor : "love", de : "from"}
+/// The reason that the the bug exists where it can only run once is that each translator
+/// prints directly from the module instead of sending back a string to get compiled.
