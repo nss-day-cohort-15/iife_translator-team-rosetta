@@ -38,11 +38,18 @@ Router = (function (router) {
         if (key === currentWord) {
           console.log("INSIDE THE FOR IN LOOP!")
           stringArr[i] = spanishDict[key]
-          console.log(spanishDict[key])
+          // console.log(spanishDict[key])
           console.log(stringArr)
         }
+
+        translatedSpanishString = stringArr.join(" ")
+        console.log(translatedSpanishString)
       }
 
+      document.getElementById("resultsDiv").innerHTML = translatedSpanishString
+      // translatedSpanishString = stringArr.join(" ")
+      // console.log(translatedSpanishString)
+      // return translatedSpanish
 
   // console.log("spanishDict" + key + " = " + spanishDict[key]);
     }
