@@ -14,18 +14,17 @@ var Router = (function () {
     var spanish = document.getElementById("spanishRadio");
     var french = document.getElementById("frenchRadio");
 
-    if (spanish.checked) {
-      console.log("Spanish is checked")
-      Router.translateToSpanish(userString)
-      // console.log(userString)
-      console.log("Spanish function is done")
+      if (spanish.checked) {
+        console.log("Spanish is checked")
+        Router.translateToSpanish(userString)
+        // console.log(userString)
+        console.log("Spanish function is done")
+      } else if (french.checked) {
+      console.log("French is checked")
+      Router.translateToFrench(userString)
     }
   }
 
-  //   if (french.checked) {
-  //   console.log("French is checked")
-  //   router.translateToFrench(router)
-  // }
 
   return {
     getString(){
